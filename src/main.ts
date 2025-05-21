@@ -18,7 +18,7 @@ app.useGlobalPipes(
   app.useGlobalFilters(new RpcCustomExceptionFilter())
 
   await app.listen(envs.port);
-
+  console.log("Test")
   logger.log(`Server listening on port:${envs.port}`)
 }
 bootstrap()
